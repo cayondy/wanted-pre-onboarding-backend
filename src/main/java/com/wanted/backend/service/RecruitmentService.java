@@ -63,6 +63,7 @@ public class RecruitmentService {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Recruitment not present in the database");
         }
 
+
         Recruitment recruitment = optionalRecruitment.get();
 
         // DTO에서 null이 아닌 값만 복사하여 기존 채용 공고를 업데이트
